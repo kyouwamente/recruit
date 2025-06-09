@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>協和メンテナンス株式会社 - 地域社会の未来を築く</title>
+    <!-- Tailwind CSSを読み込みます -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google FontsからInterフォントを読み込みます -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 日本語フォントと英語フォントを適切に設定します */
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GVP8ZCT2MV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GVP8ZCT2MV');
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ヘッダーセクション -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-800">
+                <a href="index.html">協和メンテナンス株式会社</a>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300">ホーム</a>
+                <a href="company.html" class="text-gray-600 hover:text-blue-600 transition duration-300">企業情報</a>
+                <a href="information.html" class="text-gray-600 hover:text-blue-600 transition duration-300">事業紹介</a>
+                <a href="recruit.html" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">採用情報</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- モバイル用メニュー -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-100">ホーム</a>
+            <a href="company.html" class="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-100">企業情報</a>
+            <a href="information.html" class="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-100">事業紹介</a>
+            <a href="recruit.html" class="block px-6 py-3 text-sm bg-blue-600 text-white text-center rounded-b-md hover:bg-blue-700">採用情報</a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="relative bg-cover bg-center text-white" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1600&auto=format&fit=crop'); height: 60vh;">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="container mx-auto px-6 h-full flex flex-col justify-center items-center text-center relative z-10">
+                <h2 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">信頼と技術で、<br>未来のインフラを支える。</h2>
+                <p class="text-lg md:text-xl max-w-2xl">協和メンテナンスは、千葉県を拠点に高品質な建設サービスを提供し、地域社会の発展に貢献します。</p>
+            </div>
+        </section>
+
+        <!-- 会社紹介セクション -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-3xl font-bold text-blue-800 mb-4">私たちについて</h3>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                    2016年の設立以来、私たちは一貫して地域社会に密着し、信頼されるパートナーとして歩んできました。確かな技術と豊富な経験を活かし、お客様の多様なニーズにお応えしています。
+                </p>
+                <a href="company.html" class="bg-transparent border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-md hover:bg-blue-600 hover:text-white transition duration-300">
+                    企業情報を見る
+                </a>
+            </div>
+        </section>
+
+        <!-- 事業内容セクション -->
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h3 class="text-3xl font-bold text-center text-blue-800 mb-12">事業内容</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <h4 class="text-xl font-bold mb-2">建設プロジェクト</h4>
+                        <p class="text-gray-600">企画から管理まで、一貫した体制で高品質な建設プロジェクトを推進します。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <h4 class="text-xl font-bold mb-2">地域インフラ整備</h4>
+                        <p class="text-gray-600">道路、橋梁など、人々の生活に不可欠なインフラを整備・維持します。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <h4 class="text-xl font-bold mb-2">環境保全型建設</h4>
+                        <p class="text-gray-600">自然と調和した、持続可能な社会を実現するための建設を心がけています。</p>
+                    </div>
+                </div>
+                 <div class="text-center mt-12">
+                    <a href="information.html" class="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition duration-300">
+                        事業紹介を詳しく見る
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッターセクション -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h4 class="text-xl font-bold">協和メンテナンス株式会社</h4>
+                    <p class="text-gray-400">〒292-0833 千葉県木更津市貝渕3丁目12番70号</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="hover:text-blue-400">ホーム</a>
+                    <a href="company.html" class="hover:text-blue-400">企業情報</a>
+                    <a href="information.html" class="hover:text-blue-400">事業紹介</a>
+                    <a href="recruit.html" class="hover:text-blue-400">採用情報</a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+                <p>Copyright &copy; 2025 All right reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- モバイルメニュー用のJavaScript -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
